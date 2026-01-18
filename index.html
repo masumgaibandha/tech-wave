@@ -16,26 +16,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"/>
-      <style>
-        *{
-            font-family: "Inter", sans-serif;
-        }
-      </style>
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
   <body class="text-white">
-    <header class="min-h-screen bg-[url(./assets/hero-bg.png)]">
+    <header class="min-h-screen bg-[url(./assets/hero-bg.png)] relative bg-cover bg-center">
       <nav class="flex justify-between items-center w-10/12 mx-auto py-9">
-        <div><h2 class="text-white text-4xl font-bold">Tech<span class="bg-linear-to-bl from-[#F7E93F] via-[#FB09B4] to-[#9100F8] inline-block text-transparent bg-clip-text">Wave</span></h2></div>
+        <div>
+          <h2 class="text-white text-4xl font-bold">
+            Tech<span
+              class="bg-linear-to-bl from-[#F7E93F] via-[#FB09B4] to-[#9100F8] inline-block text-transparent bg-clip-text"
+              >Wave</span
+            >
+          </h2>
+        </div>
         <div class="flex gap-10">
-            <p><a href="#">About</a></p>
-            <p><a href="#">Episodes</a></p>
-            <p><a href="#">Host</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Episodes</a></p>
+          <p><a href="#">Host</a></p>
         </div>
         <div>
-            <button class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[135px] h-11 rounded-3xl">Subscribe<i class="fa-solid fa-arrow-right pl-1"></i></button>
+          <button
+            class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[135px] h-11 rounded-3xl"
+          >
+            Subscribe<i class="fa-solid fa-arrow-right pl-1"></i>
+          </button>
         </div>
       </nav>
+      <!-- Banner -->
+      <div class="absolute left-[600px]">
+        <img class="" src="./assets/hero-circle.png" alt="" />
+        
+        <div>
+          <h1 class="text-6xl font-extrabold py-5 pl-8">TechWave</h1>
+          <p class="pb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+          <div>
+            <button class="mr-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[201px] h-11 rounded-3xl"> 
+       
+             <i class="fa-brands fa-spotify"></i>
+            Listen on Spotify
+          </button>
+          <button class="border-2 border-[#00FF88] font-semibold text-[#00FF88]  w-[201px] h-11 rounded-3xl"> 
+            
+             <i class="fa-solid fa-envelope"></i>
+            Subscribe
+          </button>
+          </div>
+        </div>
+        <div class="absolute top-24 left-28">
+            <img src="assets/microphone.png" alt="">
+        </div>
+            <div class="absolute top-8 right-48">
+                <span class="px-6 py-2 bg-[#00FF88] text-black rounded-xl">New</span>
+            </div>
+      </div>
     </header>
 
     <main></main>
