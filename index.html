@@ -26,9 +26,8 @@
   </head>
   <body class="text-white">
     <header
-      class="min-h-screen bg-[url(./assets/hero-bg.png)] relative bg-cover bg-center"
-    >
-      <nav class="flex justify-between items-center w-10/12 mx-auto py-9">
+      class="bg-[url(./assets/hero-bg.png)] relative bg-center bg-cover bg-no-repeat min-h-screen">
+      <nav class="flex justify-between items-center w-10/12 mx-auto pt-10 pb-20">
         <div>
           <h2 class="text-white text-4xl font-bold">
             Tech<span
@@ -37,22 +36,21 @@
             >
           </h2>
         </div>
-        <div class="flex gap-10">
+        <div class="sm:flex hidden gap-10">
           <p><a href="#">About</a></p>
           <p><a href="#">Episodes</a></p>
           <p><a href="#">Host</a></p>
         </div>
         <div>
-          <button
-            class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[135px] h-11 rounded-3xl"
-          >
+          <button class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[135px] h-11 rounded-3xl hidden sm:block">
             Subscribe<i class="fa-solid fa-arrow-right pl-1"></i>
           </button>
+          <img class="sm:hidden" src="assets/hamburger-menu.png" alt="">
         </div>
       </nav>
       <!-- Banner -->
-      <div class="w-10/12 mx-auto">
-        <img class="mx-auto" src="./assets/hero-circle.png" alt="" />
+      <div class="w-10/12 mx-auto relative">
+        <img class="mx-auto w-48 sm:w-80 md:w-[420px] lg:w-[420px] h-auto" src="./assets/hero-circle.png" alt="" />
 
         <div class="text-center">
           <h1 class="text-6xl font-extrabold py-5">TechWave</h1>
@@ -60,33 +58,40 @@
             Your daily dose of tech insights, productivity hacks, and personal
             growth
           </p>
-          <div>
+          <div class="pb-10">
             <button
-              class="mr-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[201px] h-11 rounded-3xl"
+              class="mr-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]  w-40 sm:w-[180px] md:w-[201px] h-11 rounded-3xl"
             >
               <i class="fa-brands fa-spotify"></i>
               Listen on Spotify
             </button>
             <button
-              class="border-2 border-[#00FF88] font-semibold text-[#00FF88] w-[201px] h-11 rounded-3xl"
+              class="border-2 border-[#00FF88] font-semibold text-[#00FF88] w-40 sm:w-[201px] h-11 rounded-3xl"
             >
               <i class="fa-solid fa-envelope"></i>
               Subscribe
             </button>
           </div>
         </div>
-        <div class="absolute left-1/2 -translate-x-1/2 top-48">
-          <img src="assets/microphone.png" alt="" />
+        <div class="absolute left-1/2 -translate-x-1/2 top-20  w-12 sm:w-20 md:w-32 lg:w-40"> 
+          <img class="w-full h-auto" src="assets/microphone.png" alt="" />
         </div>
-        <div class="absolute top-28 left-1/2">
+        <div class="absolute top-12 right-2/13 sm:right-3/12 md:right-4/15 lg:right-4/11">
           <span class="px-6 py-2 bg-[#00FF88] text-black rounded-xl">New</span>
         </div>
       </div>
 
-      <div class="mt-10">
+      
+    </header>
+
+    <main>
+
+      <div class="bg-[#221648]">
+        <!-- About Section -->
+        <div class="pt-10 sm:w-10/12 mx-auto">
         <div class="text-center space-y-5">
-          <h2 class="text-6xl font-extrabold">About the Podcast</h2>
-          <p class="px-48 text-[#ffffffb0]">
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold">About the Podcast</h2>
+          <p class="px-5 sm:px-6 md:px-10 lg:px-48 text-[#ffffffb0]">
             TechWave is your go-to podcast for staying ahead in the fast-paced
             world of technology. We break down complex topics into digestible
             insights, explore productivity strategies that actually work, and
@@ -99,38 +104,35 @@
           <hr class="my-8 border-t border-white/20 w-10/12 mx-auto" />
         </div>
 
-        <div class="flex justify-between mx-10 py-20">
-          <div>
+        <div class="grid grid-cols-2 gap-5 md:grid-cols-4 mx-10 py-20 text-center">
+          <div class="">
             <h1 class="text-[#00FF88] text-5xl font-extrabold">150K+</h1>
             <p>Monthly Listeners</p>
           </div>
           <div>
-            <h1 class="text-[#00FF88] text-5xl font-extrabold">150K+</h1>
-            <p>Monthly Listeners</p>
+            <h1 class="text-[#00FF88] text-5xl font-extrabold">200+</h1>
+            <p>Episodes Published</p>
           </div>
           <div>
-            <h1 class="text-[#00FF88] text-5xl font-extrabold">150K+</h1>
-            <p>Monthly Listeners</p>
+            <h1 class="text-[#00FF88] text-5xl font-extrabold">4.9★</h1>
+            <p>Average Rating</p>
           </div>
           <div>
-            <h1 class="text-[#00FF88] text-5xl font-extrabold">150K+</h1>
-            <p>Monthly Listeners</p>
+            <h1 class="text-[#00FF88] text-5xl font-extrabold">50+</h1>
+            <p>Industry Experts</p>
           </div>
         </div>
       </div>
-    </header>
-
-    <main>
-      <div class="bg-[#221648]">
+      <!-- why choose -->
         <div class="w-10/12 mx-auto">
-          <h2 class="py-10 text-5xl text-center font-bold">
+          <h2 class="py-10 text-3xl md:text-5xl text-center font-bold">
             Why Choose TechWave
           </h2>
 
-          <div class="pb-10 grid grid-cols-3 grid-rows-3 gap-5 h-[783px]">
+          <div class="pb-10 grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-5 h-[783px]">
             <!-- Card-1 -->
             <div
-              class="bg-[#2a0f4d] rounded-2xl px-10 col-span-1 row-span-2 flex flex-col justify-center items-center"
+              class="bg-[#2a0f4d] rounded-2xl gap-6 px-10 col-span-1 row-span-1 md:row-span-2 flex flex-col justify-center items-center"
             >
               <div>
                 <img src="assets/headphone.png" alt="" />
@@ -145,7 +147,7 @@
             </div>
             <!-- Card-2 -->
             <div
-              class="bg-[#2a0f4d] rounded-2xl px-10 pt-10 col-span-2 flex flex-col justify-center"
+              class="bg-[#2a0f4d] rounded-2xl px-10 gap-6 pt-10 col-span-1 md:col-span-2 flex flex-col justify-center"
             >
               <div>
                 <img src="assets/device.png" alt="" />
@@ -158,7 +160,7 @@
             </div>
             <!-- Card-3 -->
             <div
-              class="bg-[#2a0f4d] rounded-2xl px-10 pt-10 col-span-2 flex flex-col justify-center"
+              class="bg-[#2a0f4d] rounded-2xl gap-6 px-10 pt-10 col-span-1 md:col-span-2 flex flex-col justify-center"
             >
               <div>
                 <img src="assets/location.png" alt="" />
@@ -171,7 +173,7 @@
             </div>
             <!-- Card-4 -->
             <div
-              class="bg-[#2a0f4d] rounded-2xl px-10 pt-10 col-span-2 flex flex-col justify-center items-center"
+              class="bg-[#2a0f4d] rounded-2xl px-10 gap-6 pt-10 col-span-1 md:col-span-2 flex flex-col justify-center items-center"
             >
               <div>
                 <img src="assets/Icon.png" alt="" />
@@ -187,7 +189,7 @@
             <!-- Card-5 -->
 
             <div
-              class="bg-[#2a0f4d] rounded-2xl px-10 pt-10 flex flex-col justify-center items-center"
+              class="bg-[#2a0f4d] rounded-2xl px-10 pt-10 gap-6 flex flex-col justify-center items-center"
             >
               <div>
                 <img src="assets/resource.png" alt="" />
@@ -201,12 +203,13 @@
           </div>
         </div>
       </div>
-      <div class="bg-[#1A0B2E]">
-        <div class="w-10/12 mx-auto">
+     
+       <div class="bg-[#1A0B2E]">
+        <div class="w-10/12 mx-auto pt-10">
           <!-- Video -->
           <div class="pt-30 pb-10">
             <h2 class="text-5xl pb-10 text-center">Featured Episodes</h2>
-            <div class="grid grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div>
                 <iframe
                   class="rounded-3xl"
@@ -305,19 +308,20 @@
               </div>
             </div>
           </div>
+          
           <!-- Meet Team -->
            <div class="py-20 ">
           <h2 class="text-5xl font-bold text-center pb-10">Meet the Host</h2>
 
-          <div class="bg-[#3c1955]  h-[280px] grid grid-cols-6 justify-center items-center px-10 rounded-2xl">
-            <div class="col-span-1">
-              <img src="assets/host.png" alt="">
+          <div class="bg-[#3c1955]  md:h-[280px] grid grid-cols-1 md:grid-cols-6 justify-center items-center px-2 md:px-10 rounded-2xl">
+            <div class="col-span-1 pt-10">
+              <img class="mx-auto" src="assets/host.png" alt="">
               
             </div>
             <div class="col-span-5 pl-10">
               <h2 class="text-4xl font-bold pb-3">Alex Kumar</h2>
               <p class="text-[#ffffffb0]">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-              <div class="flex gap-5 pt-10 items-center">
+              <div class="flex gap-5 py-10 items-center justify-center md:justify-start">
                 <img src="assets/linkedin.png" alt="">
                 <img src="assets/x.png" alt="">
                 <img src="assets/instagram.png" alt="">
@@ -342,7 +346,7 @@
               >Wave</span>
           </h2>
           </div>
-          <div class="flex justify-center items-center gap-10 pt-5">
+          <div class="grid grid-cols-2 md:grid-cols-4 w-md md:w-xl mx-auto justify-center items-center gap-10 pt-5">
             <p class="flex justify-center items-center gap-3">
               <img class="w-4 h-4 " src="assets/spotify.png" alt="">
               <span>Spotify</span>
